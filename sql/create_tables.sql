@@ -1,4 +1,5 @@
-﻿-- Schema: importaciones_db
+﻿
+-- Schema: importaciones_db
 
 -- DROP SCHEMA importaciones_db;
 
