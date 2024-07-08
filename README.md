@@ -2,10 +2,6 @@
 
 Este repositorio contiene el código y los recursos necesarios para modelar una base de datos transaccional utilizando PostgreSQL. El objetivo principal es estructurar las entidades y relaciones a partir de un archivo de texto descargado de Kaggle, y luego poblar las tablas correspondientes mediante un stored procedure.
 
-#### Contenido del Archivo de Datos
-[![Contenido-del-archivo-de-datos.png](https://i.postimg.cc/Kc5T3Yqt/Contenido-del-archivo-de-datos.png)](https://postimg.cc/kDBGk7d5)
-
-
 ## Introducción
 
 - En este proyecto, se han seguido los siguientes pasos para llevar a cabo el modelado y la carga de datos:
@@ -66,9 +62,7 @@ Características de los Datos:
 - Información relacionada con importaciones de vehículos.
 
 ### Modelo Físico OLTP
-
-[![modelo-fisico-oltp.png](https://i.postimg.cc/DyN17wwF/modelo-fisico-oltp.png)](https://postimg.cc/mtQPwR96)
-
+<br><img src="https://i.postimg.cc/DyN17wwF/modelo-fisico-oltp.png" alt="">
 ### Creación de la Base de Datos
 
 En esta sección se describen los comandos utilizados para la creación de la base de datos en PostgreSQL. Estos comandos se aplican a lo largo del desarrollo de la base de datos para definir esquemas, tablas, constraints y otras estructuras necesarias. Esta documentación sirve como referencia para entender y reproducir el proceso de creación de la base de datos.
@@ -145,8 +139,7 @@ Se utiliza para definir una clave foránea en una tabla, que crea una relación 
 			  REFERENCES importaciones_db.pais_origen (id_pais_origen) MATCH SIMPLE
 			  ON UPDATE NO ACTION ON DELETE NO ACTION
 
-[![Script-sql-creacion-tablas.png](https://i.postimg.cc/bv5QwYT1/Script-sql-creacion-tablas.png)](https://postimg.cc/CZjZvg9K)
-
+<br><img src="https://i.postimg.cc/bv5QwYT1/Script-sql-creacion-tablas.png" alt="">
 
 ### Stored Procedure para la Carga de Información
 
@@ -306,8 +299,7 @@ Ejemplo:
 				);
 				
 			end loop;
-
-[![Script-sql-store-procedure.png](https://i.postimg.cc/CK41xwVm/Script-sql-store-procedure.png)](https://postimg.cc/Y4hkXK0W)
+<br><img src="https://i.postimg.cc/CK41xwVm/Script-sql-store-procedure.png" alt="">
 
 ## Contenido del Repositorio
 
@@ -317,7 +309,7 @@ Ejemplo:
   - `store_procedure.sql`: Script del stored procedure para poblar las tablas finales.
 - `README.md`: Este archivo, que proporciona una guía sobre el proyecto y su estructura.
 
-[![Estructura-proyecto.png](https://i.postimg.cc/htDpQw1t/Estructura-proyecto.png)](https://postimg.cc/7fRgpKRF)
+<br><img src="https://i.postimg.cc/htDpQw1t/Estructura-proyecto.png" alt="">
 
 ## Instrucciones para Configurar y Cargar los Datos
 
@@ -338,7 +330,7 @@ Sigue estos pasos para configurar el proyecto y cargar los datos en la tabla tem
   <b>COPY importaciones_db.tablatemporal FROM 'D:\CURSO DE DATAPATH\BOOTCAMP\Proyectos en GITHub\Modelado de BD y carga de datos con Postgresql\data\web_imp_08012019.txt' DELIMITER '|' CSV HEADER;</b><br><br>
   <b>COPY importaciones_db.tablatemporal FROM 'D:\CURSO DE DATAPATH\BOOTCAMP\Proyectos en GITHub\Modelado de BD y carga de datos con Postgresql\data\web_imp_08022017.txt' DELIMITER '|' CSV HEADER;</b><br><br>
 
-[![ruta-path-txt.png](https://i.postimg.cc/sDrYHfD2/ruta-path-txt.png)](https://postimg.cc/Cdcnzg8y)
+<br><img src="https://i.postimg.cc/sDrYHfD2/ruta-path-txt.png" alt="">
 
 ### 3. Crea el schema en la base de datos de PostgreSQL
 
