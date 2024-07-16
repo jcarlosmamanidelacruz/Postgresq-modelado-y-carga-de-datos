@@ -1,5 +1,7 @@
 # Proyecto de Modelado y Carga de Datos con PostgreSQL
 
+<img src="https://i.postimg.cc/sDSdQZ7X/Postgre-SQL-MOD-CAR.png" alt="">
+
 Este repositorio contiene el código y los recursos necesarios para modelar una base de datos transaccional utilizando PostgreSQL. El objetivo principal es estructurar las entidades y relaciones a partir de un archivo de texto descargado de Kaggle, y luego poblar las tablas correspondientes mediante un stored procedure.
 
 ## Introducción
@@ -33,11 +35,20 @@ Este repositorio contiene el código y los recursos necesarios para modelar una 
 
 Para modelar una base de datos transaccional basada en los datos de los archivos .txt descargados de Kaggle, podemos seguir un proceso estructurado, desde la recolección y análisis de los datos hasta el diseño y creación de la base de datos.
 
-### Recolección y Análisis de Datos
+### Entender los Datos
 
-Entender los Datos:
+Es crucial comenzar por comprender la estructura y el contenido de los datos. Esto implica revisar las cabeceras y el formato de los archivos para identificar las columnas y tipos de datos que se manejarán. A continuación se muestra un ejemplo de cómo se ven las cabeceras de los datos en el archivo:
 
-- Cabeceras de los Datos:
+<img src="https://i.postimg.cc/BvjGv1nm/9-cabeceras.png" alt="">
+
+### Cabeceras de los Datos
+
+Al revisar las cabeceras, podemos determinar qué tipo de información está contenida en cada columna y cómo se relacionan entre sí. Este paso es fundamental para planificar cómo los datos se modelarán en la base de datos. La siguiente imagen muestra un ejemplo detallado de las cabeceras y algunos datos de muestra:
+
+<img src="https://i.postimg.cc/Qd07pVrL/10-cabeceras-data.png" alt="">
+
+Las columnas identificadas en los datos son las siguientes:
+
 - País de Proveniencia
 - Aduana de Ingreso
 - Fecha de la Poliza
@@ -55,6 +66,7 @@ Entender los Datos:
 - Tonelaje
 - Valor CIF
 - Impuesto
+- Otros
 
 Características de los Datos:
 
